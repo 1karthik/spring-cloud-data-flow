@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    function:
+      definition: transform
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        transform-out-0:
+          destination: my-transform
+        transform-in-0:
+          destination: my-source

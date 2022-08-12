@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    function:
+      definition: consumer
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        consumer-in-0:
+          destination: my-transform
